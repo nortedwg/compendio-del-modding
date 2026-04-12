@@ -2,10 +2,6 @@
 sidebar_position: 1
 ---
 
-# Título de mi página
+# Editar un M2
 
-Aquí escribes lo que quieras en texto normal.
-
-## Un apartado
-
-Más contenido aquí.
+Aquí explicas cómo editar un M2...
