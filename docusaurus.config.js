@@ -5,6 +5,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'Compendio del Modding',
   tagline: 'Para EpsilonWoW',
+  favicon: 'img/favicon.png',
+  titleDelimiter: '·',
 
   future: {
     v4: true,
