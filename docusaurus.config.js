@@ -5,7 +5,6 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'Compendio del Modding',
   tagline: 'Para EpsilonWoW',
-  favicon: 'img/favicon.ico',
 
   future: {
     v4: true,
@@ -18,11 +17,15 @@ const config = {
   projectName: 'compendio-del-modding',
   trailingSlash: false,
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
 
   i18n: {
     defaultLocale: 'es',
-    locales: ['es'],
+    locales: ['es', 'en'],
+    localeConfigs: {
+      es: { label: 'Español' },
+      en: { label: 'English' },
+    },
   },
 
   presets: [
@@ -31,6 +34,7 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
+          routeBasePath: '/',
         },
         blog: false,
         theme: {
@@ -42,16 +46,11 @@ const config = {
 
   themeConfig:
     ({
-      image: 'img/docusaurus-social-card.jpg',
       colorMode: {
         respectPrefersColorScheme: true,
       },
       navbar: {
         title: 'Compendio del Modding',
-        logo: {
-          alt: 'Logo',
-          src: 'img/logo.svg',
-        },
         items: [
           {
             type: 'docSidebar',
@@ -60,8 +59,12 @@ const config = {
             label: 'Guías',
           },
           {
-            href: 'https://github.com/nortedwg/compendio-del-modding',
-            label: 'GitHub',
+            type: 'localeDropdown',
+            position: 'right',
+          },
+          {
+            href: 'https://x.com/norte_m2',
+            label: 'Twitter',
             position: 'right',
           },
         ],
