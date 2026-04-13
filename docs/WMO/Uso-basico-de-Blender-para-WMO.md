@@ -234,9 +234,9 @@ Cogerá el nombre de tu textura, por ejemplo `6hu_garrison_wall`, y le adjudicar
 ¿No existe? No pasa nada, ¡añádela! Se guarda para siempre.
 
 :::tip[¿Qué es una Custom?]
-Si usas texturas propias sustituyendo antiguas — por ejemplo, has generado una textura HD llamada `Custom_Pared` — en **Custom** añades el nombre: `Custom_Pared`, y en **Ruta** añades la que reemplaza: `dungeons/wmo/remplazada.blp`.
+Si usas texturas propias sustituyendo antiguas del WoW, por ejemplo, has generado una textura HD llamada `Custom_Pared`, en **Custom** añades el nombre: `Custom_Pared`, y en **Ruta** añades la que reemplaza: `dungeons/wmo/remplazada.blp`.
 
-Ahora, cada vez que Blender detecte `Custom_Pared`, aplicará esa ruta.
+Ahora, cada vez que Blender detecte un material llamado `Custom_Pared`, aplicará esa ruta.
 :::
 
 En [*Diagnóstico*] encontrarás un par de botones. El primero abrirá la consola y te dirá si todos tus materiales tienen una textura adjudicada, el segundo nos dirá cuantos tenemos en total.

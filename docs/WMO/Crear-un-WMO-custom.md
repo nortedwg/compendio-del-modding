@@ -99,10 +99,11 @@ Al ejecutar este paso, todos los materiales de tu objeto 3D habrán desaparecido
 
 ## Adjudicar materiales ingame
 :::tip[Aviso]
-Hay 2 metodologías para hacer esto. La manual, y la automática con WoW: Atajos Útiles. Recomiendo saltar a la segunda.
+Hay 2 metodologías para hacer esto. La manual, y la automática con WoW: Atajos Útiles. Recomiendo [saltar a la segunda](https://nortedwg.github.io/compendio-del-modding/WMO/Crear-un-WMO-custom#metodolog%C3%ADa-2-forma-autom%C3%A1tica).
 :::
 
 ### METODOLOGÍA 1: Forma Manual
+Recomiendo solo leer esta metodología para saber como se hace, pero **no recomiendo** hacerlo de esta forma. Es más larga, tediosa, poco eficiente y suele dar pie a errores. Utiliza [la segunda](https://nortedwg.github.io/compendio-del-modding/WMO/Crear-un-WMO-custom#metodolog%C3%ADa-2-forma-autom%C3%A1tica).
 
 ![Recuperar materiales](./img/guia-wmo-1/image50.png)
 
@@ -132,8 +133,66 @@ dungeons/textures/6hu_garrison/6hu_garrison_armorystone.blp
 Repite con cada material, asignándole su futuro archivo dentro del WoW.
 
 
-
+---
 ### METODOLOGÍA 2: Forma Automática
+
+Este método utiliza el AddOn de Blender  [**WoW: Atajos Útiles**](https://github.com/nortedwg/WoW-Atajos-Utiles). Te ahorrará muchísimo trabajo.
+
+En este momento estaremos viendo todos los materiales en negro.
+Abrimos el panel del AddOn (*Pulsa N si no lo ves*) y pulsamos en [*Rellenar Texturas WMO*]
+
+![Ejemplo](./img/guia-wmo-1/a1.png)
+
+El AddOn automáticamente rellenará los path de **todas** las texturas del proyecto, siempre y cuando se cumplan dos condiciones:
+
+---
+1. **La textura se llama como su imagen.**
+
+Puedes utilizar el botón de [*Nombrar material como su Imagen*] y lo hará automáticamente con todos los materiales del proyecto.
+:::tip[Aviso]
+Estamos utilizando las imagenes extraidas del WoW. Por lo que se llamarán como la textura ingame. *Ejemplo: "6hu_stone.png" será dentro de blender "6hu_stone". (El AddOn al darle al botón ignora la terminación y lo nombrará correctamente)*. Asegúrate de que se llamen así o no funcionará.
+:::
+
+---
+2. **La textura está en la base de datos**.
+
+La base que incluye de base el addon no son todas las texturas del WoW, son solo unas 300.
+Puedes añadir las tuyas propias en la siguiente casilla:
+
+![Ejemplo añadir texturas](./img/guia-wmo-1/a2.png)
+
+Basta con introducir la ruta completa y darle al botón. Se guarda para siempre. Por ejemplo: ```dungeons/textures/dalaran/eb_dalaran_archstone1.blp```
+
+La próxima vez ya la tendrás disponible de forma automática.
+
+También puedes añadir tus propias texturas custom. 
+:::tip[¿Qué es una Custom?]
+Si usas texturas propias sustituyendo antiguas del WoW, por ejemplo, has generado una textura HD llamada `Custom_Pared`, en **Custom** añades el nombre: `Custom_Pared`, y en **Ruta** añades la que reemplaza: `dungeons/wmo/remplazada.blp`.
+
+Ahora, cada vez que Blender detecte un material llamado `Custom_Pared`, aplicará esa ruta.
+:::
+
+---
+
+### ¡Espera! Le he dado al botón y aún me salen en negro mis texturas.
+Es normal. Para poder volver a verlas, un truco es darle colisión al objeto, las recargará todas. De todas formas, que se vean en negro en blender no afecta en nada a como se ven en el juego.
+
+---
+
+### Comprobaciones
+Todas las texturas deben tener un path asignado. Si no lo tienen dará un error al exportar avisándote de cual no tienen.
+
+Si entras a materiales, puedes ir haciendo click sobre cada uno de los materiales para ver que todos tienen una ruta asignada.
+![Ejemplo de comprobar](./img/guia-wmo-1/a3.png)
+Deberemos ver (*en lo naranja*) que tiene una ruta válida.
+
+**¿Y si no la tiene?**
+Lo más probable es que el nombre del material no se corresponda con ninguna textura válida de la base de datos.
+Cambia el nombre del material a uno que sí, o añadelo a la base de datos como hemos explicado antes.
+Si vuelves a darle al addon, se volverá a generar automáticamente.
+
+
+---
 
 **Otras opciones** *(no necesarias)*:
 
@@ -141,9 +200,6 @@ Repite con cada material, asignándole su futuro archivo dentro del WoW.
 
 **Terrain Type** define el sonido que tendrán las pisadas del personaje sobre el WMO dentro del juego.
 
-:::tip[Recomendación]
-Usa el addon **WoW: Añadir Automáticamente Texturas de WMO** — disponible como el segundo addon en la guía: **Uso básico de Blender para crear un WMO**.
-:::
 
 ---
 
@@ -155,16 +211,22 @@ Para añadir colisión, dentro del panel del addon haz click en **QUICK COLLISIO
 
 Generará una colisión básica según la forma del objeto 3D.
 
+:::tip[Tip]
+Por defecto deja el número que aparece. Si ingame la colisión no funciona como debe, cambia el número. Normalmente otro mayor dará mejores resultados, sin embargo, tras haber probado, hay veces que números como 100 o 200 solucionan el problema. Recomiendo probar primero 5000, etc. Ve probando hasta que uno funcione.
+:::
+
 ---
 
 ## Posibles errores
 
-:::warning[Cuidado!]
-La UV del objeto deberá llamarse **UVMap** o dará error al exportar.
+:::warning[¡Cuidado!]
+La UV del objeto deberá llamarse **UVMap** o dará error al exportar. Puedes renombrarla con el bottón del addon de Atajos Útiles.
 :::
 
 ![UV Map renombrada como UVMap](./img/guia-wmo-1/image54.png)
-
+:::warning[¡Tener un proyecto!]
+Solo hará falta la primera vez.
+:::
 Para poder exportar también deberemos haber creado un **proyecto** en el addon. Solo hace falta hacerlo la primera vez; un mismo "proyecto" vale para todo lo que hagas en adelante. Se puede crear sin problema al final.
 
 ![Crear proyecto en el addon](./img/guia-wmo-1/image34.png)
@@ -408,110 +470,3 @@ Un material también tiene un número máximo de vértices y caras que puede sop
 Una de las texturas tiene un espacio en su **path** — normalmente al final, detrás del `.blp`. Elimina cualquier espacio sobrante.
 
 ---
-
-## Guia rapida con consejos
-
-*Un añadido posterior para simplificar la tarea de crear un WMO. Para dudas más detalladas, consulta las secciones anteriores.*
-
-![Barra de herramientas del addon WMO](./img/guia-wmo-1/image24.png)
-
-### 1 — Activar y añadir el directorio del WMO
-
-![Panel de directorio activado](./img/guia-wmo-1/image32.png)
-
-Si el WMO que sustituimos es `world/wmo/brokenisles/suramar/7sr_hub_statue.wmo`, el **directory path** es:
-
-```
-world/wmo/brokenisles/suramar
-```
-
----
-
-### 2 — Outdoor o Indoor
-
-Mueve tus objetos a su casilla correspondiente.
-
-:::warning[Limite por objeto]
-Maximo **40.000 vertices** por objeto. *(Ver seccion WMO Complejo: Subgrupos para saber como comprobarlo.)*
-:::
-
-![Panel Outdoor / Indoor](./img/guia-wmo-1/image6.png)
-
----
-
-### 3 — Materiales
-
-![Panel de materiales del addon WMO](./img/guia-wmo-1/image25.png)
-
-1. Selecciona tus objetos.
-2. Haz click en **Generate Materials** en el panel del addon. *(Si no aparece, pulsa **N**.)*
-3. Los materiales se volverán negros — es normal.
-
-![Materiales en negro tras generar](./img/guia-wmo-1/image31.png)
-
-:::tip[Consejo]
-Nombra tus materiales desde el principio con el nombre de su `.blp`. Te ahorrarás mucho trabajo más adelante.
-:::
-
-:::tip[Consejo]
-Arrastra hacia arriba la pestaña **WMO Material** — la usarás muchas veces y es más cómodo tenerla visible. *(La flecha indica desde donde se arrastra.)*
-:::
-
-![Pestaña WMO Material arrastrada hacia arriba](./img/guia-wmo-1/image8.png)
-
-En cada material:
-
-1. Pulsa **Texture 1** y asígnale el `.png` que está usando Blender *(solo para visualizarlo tú)*.
-
-![Asignar textura de visualización](./img/guia-wmo-1/image27.png)
-
-2. En **path**, escribe el blp completo. Por ejemplo:
-
-```
-dungeons/textures/pandaren/mogu/ce_whitewall.blp
-```
-
-:::tip[Consejo]
-Copia el nombre del material, pégalo en [https://wago.tools/files](https://wago.tools/files) y desde ahí copia el directorio completo. Por eso conviene tener ya el nombre del blp asignado al material.
-:::
-
-![Wago Tools mostrando el directorio completo](./img/guia-wmo-1/image1.png)
-
-:::warning[Cuidado con los espacios]
-Wago Tools siempre añade un espacio al final al copiar. Al pegarlo en Blender, **elimina el espacio del final** — lo último debe ser la `p`. Los espacios en el path darán error al exportar.
-:::
-
-Para asignar sonido de pisadas: consulta la sección **Materiales del WoW** para ver la opcion *Terrain Type*.
-
-:::tip[Recomendación]
-Usa el addon **WoW: Añadir Automáticamente Texturas de WMO** disponible en la guía: **Uso básico de Blender para crear un WMO**.
-:::
-
----
-
-### 4 — Colision
-
-![Panel Quick Collision](./img/guia-wmo-1/image14.png)
-
-Con el objeto seleccionado, haz click en **Quick Collision**. Se crea automáticamente y no se ve en pantalla.
-
-Si la colisión falla en algún punto ingame, ajusta el valor inferior izquierdo hasta que funcione correctamente:
-
-![Ajuste de colisión abajo a la izquierda](./img/guia-wmo-1/image29.png)
-
----
-
-### 5 — Exportar
-
-Con todo listo, exporta desde el panel del addon:
-
-![Panel de exportación completo](./img/guia-wmo-1/image55.png)
-
-El objeto exportado será versión 3.3.5 (Lichking); conviértelo a Shadowlands con el convertidor.
-
-Introduce los archivos en la carpeta `INPUT` **con el nombre del WMO original**:
-
-![Archivos exportados por Blender](./img/guia-wmo-1/image7.png)
-![Carpeta INPUT lista](./img/guia-wmo-1/image30.png)
-
-Ejecuta el *MultiConverter.exe* y en `OUTPUT` aparecerán 3 archivos. Con los dos `.wmo` crea el parche del Epsilon. **¡Listo!**
