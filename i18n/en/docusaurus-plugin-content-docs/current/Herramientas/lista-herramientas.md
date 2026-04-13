@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Tools & Links Reference
 
-Compiled by **NORTE.m2** · Version 1.0
+Guide by **NORTE.m2** · Version 1.0
 
 ---
 
