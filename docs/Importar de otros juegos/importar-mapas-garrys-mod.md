@@ -495,7 +495,7 @@ El **.json** que me exporte lo renombro como **patch.json** y lo introduzco en l
 
 ---
 
-## Unir Parches.
+## Unir Parches
 
 Tendré por tanto un parche con todas las texturas preparadas para el WoW.
 
