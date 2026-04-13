@@ -24,7 +24,7 @@ Si no tienes mucha experiencia utilizando blender te recomiendo leer primero esa
 - [**WBS – Wow Blender Studio**](https://drive.google.com/file/d/11RFIqoz6zncmGiFw6dUGgpMvZR0iKJQ6/view)
 - [**WoW: Atajos Útiles**](https://github.com/nortedwg/WoW-Atajos-Utiles) (No obligatorio pero muy recomendado)
 
-Después, instalar el WBS y Atajos Útiles en Blender como un addon normal. *[Ayuda](https://youtu.be/q1Nvbl8oNpQ?si=7elpRkRGVa6TXrWL)*
+Después, instalar el WBS y Atajos Útiles en Blender como un addon normal. *[[Ayuda]](https://nortedwg.github.io/compendio-del-modding/WMO/Uso-basico-de-Blender-para-WMO#c%C3%B3mo-instalar-un-addon)* *[[Video]](https://youtu.be/q1Nvbl8oNpQ?si=7elpRkRGVa6TXrWL)*
 
 ### Otros links de utilidad *(no necesarios)*
 
@@ -70,7 +70,7 @@ Introducimos nuestro modelo 3D en su categoría correspondiente. *Cada categorí
 
 *(En este caso **outdoor** porque va a ser un WMO únicamente exterior.)*
 
-- Los **WMO INTERIORES** requieren portales para su funcionamiento *(ver sección WMO con Interior)*. Tienen iluminación propia y puede editarse.
+- Los **WMO INTERIORES** requieren portales para su funcionamiento *[(ver sección WMO con Interior)](https://nortedwg.github.io/compendio-del-modding/WMO/Crear-un-WMO-custom#wmo-con-interior)*. Tienen iluminación propia y puede editarse.
 - Los **WMO EXTERIORES** no requieren de ello; su iluminación es la del mundo.
 
 ---
@@ -97,7 +97,12 @@ Si el panel no aparece, ábrelo pulsando **N** o la flechita superior.
 
 Al ejecutar este paso, todos los materiales de tu objeto 3D habrán desaparecido. ¡Es normal!
 
-### Volver a ver los materiales
+## Adjudicar materiales ingame
+:::tip[Aviso]
+Hay 2 metodologías para hacer esto. La manual, y la automática con WoW: Atajos Útiles. Recomiendo saltar a la segunda.
+:::
+
+### METODOLOGÍA 1: Forma Manual
 
 ![Recuperar materiales](./img/guia-wmo-1/image50.png)
 
@@ -109,9 +114,8 @@ Repite uno a uno hasta verlos todos de nuevo.
 Intercala este paso con el siguiente para ir más rápido.
 :::
 
----
 
-## Materiales del WoW
+**Materiales del WoW**
 
 A cada material hay que establecerle un vínculo con el `.blp` del WoW que vaya a utilizar.
 
@@ -126,6 +130,10 @@ dungeons/textures/6hu_garrison/6hu_garrison_armorystone.blp
 ![Ejemplo de path completo](./img/guia-wmo-1/image53.png)
 
 Repite con cada material, asignándole su futuro archivo dentro del WoW.
+
+
+
+### METODOLOGÍA 2: Forma Automática
 
 **Otras opciones** *(no necesarias)*:
 

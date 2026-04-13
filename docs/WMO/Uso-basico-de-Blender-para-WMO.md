@@ -239,6 +239,13 @@ Si usas texturas propias sustituyendo antiguas — por ejemplo, has generado una
 Ahora, cada vez que Blender detecte `Custom_Pared`, aplicará esa ruta.
 :::
 
+En [*Diagnóstico*] encontrarás un par de botones. El primero abrirá la consola y te dirá si todos tus materiales tienen una textura adjudicada, el segundo nos dirá cuantos tenemos en total.
+
+En [*Exportar*] podrás sacar un listado de las texturas del proyecto, en un .txt en el escritorio. También exportar todas las texturas en .png a una carpeta del escritorio.
+
+En [*Importar*] podrás manejar tus propias listas de materiales custom y activarlas y desactivarlas a conveniencia. Si manejas proyectos con grandes listas que no quieres utilizar siempre, separa estas en un nuevo json e impórtalo con el botón.
+Cuando esté activado, el addOn las reconocerá como material custom.
+
 ---
 
 ## Creación de un pequeño WMO, paso a paso
