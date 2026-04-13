@@ -4,18 +4,15 @@ sidebar_position: 1
 
 # Creación de un WMO Custom para Epsilon
 
-Guía por **NORTE.m2** · Versión 4.0
+Guía por **NORTE.m2** · Versión 5.0
 
 ---
 
 :::note[Aviso]
 Esta guía comienza una vez tenemos ya creado nuestro Modelo 3D en Blender.
+Puedes ver cómo crearlo aquí: [**Uso básico de Blender para crear un WMO**](https://nortedwg.github.io/compendio-del-modding/WMO/Uso-basico-de-Blender-para-WMO)
 
-Puedes ver cómo crearlo aquí: **Uso básico de Blender para crear un WMO**
-
-Se requiere tener instalado el **Addon** de Blender de **Wow Blender Studio** y **Blender 3.4** *(los links están disponibles en la sección de requisitos)*.
-
-El apartado 14 es una guía rápida para crear el WMO. Recomiendo pasar directamente a esta, aunque no profundiza tanto, si quieres ir más rápido.
+Si no tienes mucha experiencia utilizando blender te recomiendo leer primero esa guía antes de adentrarte en esta.
 :::
 
 ---
@@ -24,9 +21,10 @@ El apartado 14 es una guía rápida para crear el WMO. Recomiendo pasar directam
 
 - [**Convertidor 3.3.5 → Shadowlands**](https://mega.nz/file/EM1AzChB#HnGe6m8LoJRTq6vjJuQ6-z4_w6ziCW7zBe5ddWdCsAk)
 - [**Blender 3.4**](https://download.blender.org/release/Blender3.4/)
-- **WBS – Wow Blender Studio:** [https://drive.google.com/file/d/11RFIqoz6zncmGiFw6dUGgpMvZR0iKJQ6/view](https://drive.google.com/file/d/11RFIqoz6zncmGiFw6dUGgpMvZR0iKJQ6/view)
+- [**WBS – Wow Blender Studio**](https://drive.google.com/file/d/11RFIqoz6zncmGiFw6dUGgpMvZR0iKJQ6/view)
+- [**WoW: Atajos Útiles**](https://github.com/nortedwg/WoW-Atajos-Utiles) (No obligatorio pero muy recomendado)
 
-Después, instalar el WBS en Blender como un addon normal. *(Ayuda: [https://youtu.be/q1Nvbl8oNpQ?si=7elpRkRGVa6TXrWL](https://youtu.be/q1Nvbl8oNpQ?si=7elpRkRGVa6TXrWL))*
+Después, instalar el WBS y Atajos Útiles en Blender como un addon normal. *[Ayuda](https://youtu.be/q1Nvbl8oNpQ?si=7elpRkRGVa6TXrWL)*
 
 ### Otros links de utilidad *(no necesarios)*
 

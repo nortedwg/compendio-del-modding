@@ -96,9 +96,12 @@ También tengo la tecla **`><`** *(al lado de la Z)* como el modo de entrar en e
 
 ### ¿Cómo me añado estos atajos?
 
-Si te gustan, te los dejo preparados con un click: **`atajos para wmo recomendados.py`**
+Si te gustan, te los dejo preparados con un click:
+  [Atajos para wmo recomendados.py](https://drive.google.com/file/d/11Uwwvr1dN4LGdEEPyAjzp34we4XogzUR/view)
 
-En el menú de antes, de los keymap, le damos a **Import** y seleccionamos el archivo. A su izquierda puedes crear un perfil nuevo de teclas, para borrarlo o volver al de antes si no te gusta.
+En google drive pulsa en descargar el archivo.
+
+En Blender, en el menú de antes, de los keymap, le damos a **Import** y seleccionamos el archivo. A su izquierda puedes crear un perfil nuevo de teclas, para borrarlo o volver al de antes si no te gusta.
 
 ![Panel Keymap con botón Import](./img/image70.png)
 
@@ -194,27 +197,35 @@ Nos permite mover objetos desde vértices a otros vértices, imantados. ¡Una ma
 
 ---
 
-### WoW: Funciones Útiles
-
+### WoW: Atajos Útiles
+  [Descargar](https://github.com/nortedwg/WoW-Atajos-Utiles)
+  
 Este addon permite varias opciones útiles:
 
 ![Panel WoW Atajos Útiles](./img/image19.png)
 
-1. Cuando exportamos un objeto del WoW, al volverlo a importar, muchas veces están invertidos los materiales y se ven transparentes — los arregla todos con un click.
-2. Ajusta las propiedades de todos los materiales para verse como ingame.
-3. Renombra todas las UV.
-4. Si el material se llama `mat_textura`, quita el `mat_`. *(Todos los materiales importados de wow.export tienen ese nombre.)*
-5. Si la imagen se llama `6hu_wall.png`, renombrará el material a `6hu_wall`. Lo hace con todos.
+### Parte 1: Materiales y UVs
+
+[*¿Tu material se transparenta? Arreglar*] Cuando exportamos un objeto del WoW, al volverlo a importar, muchas veces están invertidos los materiales y se ven transparentes — los arregla todos con un click.
+
+[*Materiales sin brillo, como en el WoW*] Ajusta las propiedades de todos los materiales para verse como ingame.
+
+[*UV*] Renombra todas las UV. 
+
+[*Quitar prefijo _mat*] Si el material se llama `mat_textura`, quita el `mat_`. *(Todos los materiales importados de wow.export tienen ese nombre.)*
+
+[*Nombrar material como su imagen*] Si la imagen se llama `6hu_wall.png`, renombrará el material a `6hu_wall`. Lo hace con todos.
+
+[*Eliminar los .001 de los materiales*] Si has duplicado materiales, habrán aparecido algunos llamados .001 .002 etc, que serán exactamente igual al original. Al darle, todos se unifican en el material original y borra los demás.
 
 Además, pulsando **`ALT + R`** giramos 90 grados nuestros objetos:
 
 ![Resultado de ALT+R rotando 90 grados](./img/image9.gif)
 
----
 
-### Texturas WMO Automáticas
+### Parte 2: Texturas WMO Automáticas y Diagnóstico
 
-¿Harto de rellenar una por una la ruta de cada textura? Click en **Rellenar** y adjudicará su ruta automáticamente.
+¿Harto de rellenar una por una la ruta de cada textura? Click en **Rellenar Texturas WMO** y adjudicará su ruta automáticamente.
 
 ![Panel Texturas del WMO Automáticas](./img/image47.png)
 
@@ -570,6 +581,4 @@ El AddOn de utilidades permite renombrarlas todas con un solo click usando la op
 
 ## Exportarlo
 
-A partir de aquí, puede seguirse la guía de cómo exportar un WMO:
-
-**Creación de un WMO Custom para Epsilon**
+A partir de aquí, puede seguirse la guía de cómo exportar un WMO: [Creación de un WMO Custom para Epsilon](https://nortedwg.github.io/compendio-del-modding/WMO/Crear-un-WMO-custom)
