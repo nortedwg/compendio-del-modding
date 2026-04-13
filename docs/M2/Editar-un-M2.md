@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Editar un M2 (Armaduras) para Epsilon
+# Editar un M2 para Epsilon (Método M2i)
 
 Guía por **NORTE.m2** · Versión 1.0
 
