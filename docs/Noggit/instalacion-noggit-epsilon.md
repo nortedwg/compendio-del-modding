@@ -56,7 +56,7 @@ En el momento de redactar la guía, la última versión y la que utilizo es: [ht
 Puedes obtener la última versión en el canal de discord indicado arriba.
 
 :::tip[TIP]
-En el momento de redactar la guía, la última versión y la que utilizo es: [https://cdn.discordapp.com/attachments/1264319052583801059/1264346842976489653/global.cfg](https://cdn.discordapp.com/attachments/1264319052583801059/1264346842976489653/global.cfg)
+En el momento de redactar la guía, la última versión y la que utilizo es: [https://drive.google.com/file/d/1fmUnoNQEvWKrN6bvF1lR316cTQhGb1VR/view?usp=sharing](https://drive.google.com/file/d/1fmUnoNQEvWKrN6bvF1lR316cTQhGb1VR/view?usp=sharing)
 :::
 
 ---
