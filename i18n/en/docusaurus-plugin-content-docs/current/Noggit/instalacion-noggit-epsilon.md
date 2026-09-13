@@ -56,7 +56,7 @@ At the time of writing, the version I'm using is: [https://github.com/ModernWoWT
 Also available in the Discord channel mentioned above.
 
 :::tip[TIP]
-At the time of writing, the version I'm using is: [https://cdn.discordapp.com/attachments/1264319052583801059/1264346842976489653/global.cfg](https://cdn.discordapp.com/attachments/1264319052583801059/1264346842976489653/global.cfg)
+At the time of writing, the version I'm using is: [https://drive.google.com/file/d/1fmUnoNQEvWKrN6bvF1lR316cTQhGb1VR/view?usp=sharing](https://drive.google.com/file/d/1fmUnoNQEvWKrN6bvF1lR316cTQhGb1VR/view?usp=sharing)
 :::
 
 ---
