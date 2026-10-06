@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+slug: /noggit/basic-controls
 ---
 
 # Noggit Basic Controls & Introduction

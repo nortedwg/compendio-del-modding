@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+slug: /noggit/install-noggit-epsilon
 ---
 
 # Installing Noggit for Epsilon SL

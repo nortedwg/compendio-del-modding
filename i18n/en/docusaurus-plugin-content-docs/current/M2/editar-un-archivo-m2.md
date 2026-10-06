@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+slug: /m2/edit-m2-file
 ---
 
 # Editing an M2 for Epsilon (M2i Method)

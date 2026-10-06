@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+slug: /import-from-other-games/import-garrys-mod-maps
 ---
 
 # Importing Garry's Mod Maps into Epsilon

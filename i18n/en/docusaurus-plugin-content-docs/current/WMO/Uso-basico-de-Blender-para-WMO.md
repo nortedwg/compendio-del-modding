@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+slug: /wmo/blender-basics-for-wmo
 ---
 
 # Blender Basics for WMO Creation

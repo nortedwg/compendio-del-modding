@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+slug: /wmo/create-custom-wmo
 ---
 
 # Creating a Custom WMO for Epsilon

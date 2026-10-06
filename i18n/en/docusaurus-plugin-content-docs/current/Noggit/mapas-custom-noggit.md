@@ -1,5 +1,6 @@
 ---
 sidebar_position: 3
+slug: /noggit/custom-maps
 ---
 
 # Custom / Modern Maps in Epsilon with Noggit SL
